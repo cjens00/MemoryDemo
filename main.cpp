@@ -17,5 +17,6 @@ int main()
     {
         std::cout << std::format("Address {:#x}: \"{:#x}\"\r\n", (int) currentByte, (int) *currentByte);
     }
+    delete[] heapAllocatedBytes;
     return 0;
 }
